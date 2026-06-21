@@ -1,0 +1,125 @@
+site_name: ゲーミフィケーション実践大全
+site_description: 基礎理論から実践設計、応用分野、効果測定・倫理、最新研究までを網羅したゲーミフィケーションの体系的テキスト
+site_author: asari-mtr
+site_url: https://asari-mtr.github.io/gamification/
+copyright: © 2026 asari-mtr — CC BY 4.0
+repo_url: https://github.com/asari-mtr/gamification
+repo_name: asari-mtr/gamification
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tooltips
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切り替え
+  icon:
+    repo: fontawesome/brands/github
+
+# repo_url / repo_name は GitHub リポジトリ作成後に追記
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: ja
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/asari-mtr
+
+nav:
+  - はじめに: index.md
+  - 第Ⅰ部 基礎編:
+      - part1/index.md
+      - 1. ゲーミフィケーションとは何か: part1/01-what-is-gamification.md
+      - 2. なぜ人は動くのか — 動機づけの心理学: part1/02-psychology-of-motivation.md
+      - 3. ゲームの構成要素を分解する: part1/03-game-elements.md
+      - 4. プレイヤーを知る — ユーザータイプ論: part1/04-player-types.md
+  - 第Ⅱ部 設計編:
+      - part2/index.md
+      - 5. 設計フレームワーク: part2/05-design-frameworks.md
+      - 6. メカニクスのカタログ: part2/06-mechanics-catalog.md
+      - 7. 体験の設計: part2/07-experience-design.md
+      - 8. 設計のアンチパターン: part2/08-anti-patterns.md
+  - 第Ⅲ部 応用編:
+      - part3/index.md
+      - 9. 教育・学習: part3/09-education.md
+      - 10. ヘルスケア・行動変容: part3/10-healthcare.md
+      - 11. ビジネス・組織: part3/11-business.md
+      - 12. 社会・公共・サステナビリティ: part3/12-society.md
+  - 第Ⅳ部 計測と倫理:
+      - part4/index.md
+      - 13. 効果をどう測るか: part4/13-measurement.md
+      - 14. 倫理・ダークサイド: part4/14-ethics.md
+  - 第Ⅴ部 最新研究と未来:
+      - part5/index.md
+      - 15. 研究の最前線: part5/15-research-frontier.md
+      - 16. AIとパーソナライゼーション: part5/16-ai-personalization.md
+      - 17. 次世代テクノロジー: part5/17-next-gen-tech.md
+      - 18. これからのゲーミフィケーション: part5/18-future.md
+  - 付録:
+      - appendix/index.md
+      - A. 用語集: appendix/a-glossary.md
+      - B. デザイン・テンプレート集: appendix/b-templates.md
+      - C. ケーススタディ索引: appendix/c-case-studies.md
+      - D. 主要文献・研究リスト: appendix/d-references.md
