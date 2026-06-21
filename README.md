@@ -2,6 +2,8 @@
 
 基礎理論から実践設計、応用分野、効果測定・倫理、最新研究までを網羅した、ゲーミフィケーションの体系的テキストです。MkDocs Material でビルドし、GitHub Pages で公開します。
 
+📖 **公開サイト: <https://asari-mtr.github.io/gamification/>**
+
 ## ローカルでのプレビュー
 
 ```bash
